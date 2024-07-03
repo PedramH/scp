@@ -431,6 +431,10 @@ main > * {
     padding: 64px 20vw;
 }
 
+.get-quote-thanks {
+    padding: 20vh 20vw;
+}
+
 .checkbox-container {
     display: flex;
     gap: 4ch;
