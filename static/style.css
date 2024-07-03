@@ -164,6 +164,10 @@ li.nav-item.active > .nav-underline {
     justify-content: center;
     align-items: center;
 }
+
+.hero.features {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./img/laptop-scp-preview.jpg');
+}
 .hero-divider {
     border: none;
     border-top: 8px solid #EB1848;
