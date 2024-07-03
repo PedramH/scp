@@ -1,0 +1,592 @@
+@font-face {
+    font-family: IRANSans;
+	font-display: swap;
+    font-style: normal;
+    font-weight: bold;
+    src: url('./fonts/eot/IRANSansWebFaNum_Bold.eot');
+    src: url('./fonts/eot/IRANSansWebFaNum_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+         url('./fonts/woff2/IRANSansWebFaNum_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+         url('./fonts/woff/IRANSansWebFaNum_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+         url('./fonts/ttf/IRANSansWebFaNum_Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+	font-display: swap;
+    font-style: normal;
+    font-weight: 900;
+    src: url('./fonts/eot/IRANSansWebFaNum_Black.eot');
+    src: url('./fonts/eot/IRANSansWebFaNum_Black.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('./fonts/woff2/IRANSansWebFaNum_Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('./fonts/woff/IRANSansWebFaNum_Black.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('./fonts/ttf/IRANSansWebFaNum_Black.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+	font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/eot/IRANSansWebFaNum_Bold.eot');
+    src: url('./fonts/eot/IRANSansWebFaNum_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('./fonts/woff2/IRANSansWebFaNum_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('./fonts/woff/IRANSansWebFaNum_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('./fonts/ttf/IRANSansWebFaNum_Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+	font-display: swap;
+    font-style: normal;
+    font-weight: 500;
+    src: url('./fonts/eot/IRANSansWebFaNum_Medium.eot');
+    src: url('./fonts/eot/IRANSansWebFaNum_Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+         url('./fonts/woff2/IRANSansWebFaNum_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+         url('./fonts/woff/IRANSansWebFaNum_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+         url('./fonts/ttf/IRANSansWebFaNum_Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+	font-display: swap;
+    font-style: normal;
+    font-weight: 300;
+    src: url('./fonts/eot/IRANSansWebFaNum_Light.eot');
+    src: url('./fonts/eot/IRANSansWebFaNum_Light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+         url('./fonts/woff2/IRANSansWebFaNum_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+         url('./fonts/woff/IRANSansWebFaNum_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+         url('./fonts/ttf/IRANSansWebFaNum_Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+	font-display: swap;
+    font-style: normal;
+    font-weight: 200;
+    src: url('./fonts/eot/IRANSansWebFaNum_UltraLight.eot');
+    src: url('./fonts/eot/IRANSansWebFaNum_UltraLight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+         url('./fonts/woff2/IRANSansWebFaNum_UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+         url('./fonts/woff/IRANSansWebFaNum_UltraLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+         url('./fonts/ttf/IRANSansWebFaNum_UltraLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+	font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/eot/IRANSansWebFaNum.eot');
+    src: url('./fonts/eot/IRANSansWebFaNum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+         url('./fonts/woff2/IRANSansWebFaNum.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+         url('./fonts/woff/IRANSansWebFaNum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+         url('./fonts/ttf/IRANSansWebFaNum.ttf') format('truetype');
+}
+
+:root {
+    --form-control-color: #EB1848;
+}
+body,html {
+    font-family: IRANSans, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+}
+.topsection {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header, footer {
+    padding: 16px 32px;
+    background-color: #1A1E41;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+ul.nav {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 0px;
+}
+
+.nav > li {
+    margin: 0px;
+    /* padding: 4px 0px; */
+    box-sizing: border-box;
+    transition: border-bottom 0.5s;
+    padding-top: 2px;
+}
+
+
+
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-underline {
+    border: none;
+    border-bottom: 2px solid #EB1848;
+    width: 0px;
+    text-align: right;
+    margin: 0;
+    margin-top:2px;
+    transition: width 0.5s;
+}
+
+.nav > li.active {
+    padding-top: 0px;
+}
+
+li.nav-item:hover > .nav-underline {
+    width: 100%;
+}
+
+li.nav-item.active > .nav-underline {
+    width: 100%;
+    margin-top: 4px;
+}
+
+
+
+.header-logo{
+    flex:0 1 200px;
+}
+
+.hero {
+    flex: 1 1 auto;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./img/Man-at-Desk-Spring-Drawing-scaled.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-divider {
+    border: none;
+    border-top: 8px solid #EB1848;
+    width: 70px;
+    text-align: right;
+    margin: 0;
+}
+.hero-content {
+    /* flex: 0 1 60%; */
+    max-width: 600px;
+}
+.hero-content > h1 {
+    font-size: xxx-large;
+}
+.hero-content > a {
+    font-size: larger;
+}
+.nav-btns {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.button { 
+    display: inline-block;
+    font-size: large;
+    flex:1;
+    text-align: center;
+    white-space: nowrap;
+    color: black;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 10px 32px;
+    border-radius: 50px;
+    border: 5px solid white;
+    transition: color 0.25s, background-color 0.25s;
+}
+
+#btn-buy-scp:hover {
+    color: white;
+    background-color: transparent;
+}
+
+
+#btn-features {
+    color: white;
+    border-color: black;
+    background-color: black;
+
+}
+#btn-features:hover {
+    color: black;
+    background-color: transparent;
+}
+
+.love-scp .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35ch,1fr));
+    padding: 64px 25ch;
+    gap: 10ch;
+}
+
+.card > .fa-solid {
+    color: red;
+    font-size: xxx-large;
+}
+.card > h1{
+    font-size: x-large;
+}
+
+.feature-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-container > .row {
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 100vw;
+    min-height: 50vh;
+}
+
+
+
+.feature-container > .row > .img-1 {
+    background-image: url('./img/laptop-scp-preview.jpg');
+}
+
+.feature-container .button, .features-how-to-buy .button {
+    background-color: white;
+    border: 4px solid #EB1848;
+    color: #EB1848;
+    margin: 5ch 0;
+    transition: background-color 0.25s , color 0.25s;
+}
+
+.feature-container .button:hover , .features-how-to-buy .button:hover {
+    background-color: #EB1848;
+    color: white;
+}
+
+
+.feature-container > .row > .img-2 {
+    background-image: url('./img/English-Women-at-Desk-relaxation-scaled.jpg');
+}
+
+.feature-container > .row > .img-3 {
+    background-image: url('./img/Man-at-Desk-Double-Torsion-scaled.jpg');
+}
+
+.feature-container  .content {
+    padding: 10ch 20ch;
+}
+.feature-container  .content h2{
+    margin-top: 0;
+}
+
+.feature-container  .content ul {
+    padding: 2ch;
+}
+
+.feature-container  .content li {
+    margin: 0;
+}
+
+.windows-logo > img {
+    max-width: 15ch;
+    max-height: 15ch;
+}
+
+
+.feature-container > .row > .img {
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* min-width: 50vw; */
+}
+
+footer{
+    padding: 16px 128px;
+    flex-wrap: wrap;
+}
+.footer-logo img{
+    max-width: 256px;
+}
+
+
+/* features.html  */
+
+.bg-image {
+    background-image: url(./img/Man-at-Desk-Double-Torsion-scaled.jpg);
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main > * {
+    background-color: white;
+}
+.features-section {
+    text-align: center;
+    padding: 16px;
+}
+.features-card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+    padding: 64px 20vw;
+    gap: 5vw;
+    text-align: right;
+}
+
+
+.features-card > img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.features-card-divider {
+    border: none;
+    border-top: 8px solid #EB1848;
+    width: 70px;
+    text-align: right;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.features-get-quote {
+    /* background-color: #EB1848; */
+    background-color: transparent;
+    padding: 64px 20vw ;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+
+.features-list {
+    display: grid;
+    padding: 64px 20vw;
+    grid-template-columns: repeat(3,1fr);
+    gap: 32px; 
+}
+
+.features-list > .card > img {
+    max-width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.features-video-container {
+    padding: 64px 20vw;
+    background-color: #1A1E41;
+    color: white;
+}
+
+.features-video-container > .video {
+    max-width: 100%;
+}
+
+.features-how-to-buy {
+    padding: 64px 20vw;
+    background-color: #F7F7F7;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 16px;
+}
+
+.features-how-to-buy > img {
+    max-width: 100%;
+} 
+
+
+
+/* get quote  */
+
+.not-full-screen{
+    min-height: 0;
+}
+
+.quote-top {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./img/Man-at-Desk-Double-Torsion-scaled.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.get-quote-hero {
+    background-color: transparent;
+    padding: 64px 20vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-quote-main {
+    padding: 64px 20vw;
+}
+
+.checkbox-container {
+    display: flex;
+    gap: 4ch;
+    flex-wrap: wrap;
+}
+.inputgroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputgroup > input {
+    margin-top: 2ch;
+    padding: 4px 8px;
+    font-family: inherit;
+}
+.input-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
+    gap: 16px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    transition: 0.5s;
+    outline: none;
+}
+input[type="text"]:focus, input[type="email"]:focus {
+    border: 2px solid var(--form-control-color);
+}
+form span {
+    color: var(--form-control-color);
+}
+
+input[type="submit"] {
+    margin-top: 16px;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 8px 16px;
+    border: 2px solid var(--form-control-color);
+    color: var(--form-control-color);
+    background-color: #fff;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+input[type="submit"]:hover {
+    border: 2px solid #1A1E41;
+    background-color: #1A1E41;
+    color: white;
+}
+/* ======== Custom checkbox style ========= */
+.checkgroup {
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.6em;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+
+    -webkit-appearance: none;
+    appearance: none;
+
+    background-color: #fff;
+    margin: 0;
+
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    /* transform: translateY(-0.075em); */
+
+    display: grid;
+    place-content: center;
+} 
+
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.75em;
+    height: 0.75em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+/* input[type="checkbox"]:focus {
+    outline: max(2px, 0.15em) solid currentColor;
+    outline-offset: max(2px, 0.15em);
+} */
+
+
+
+
+/* media queries  */
+@media (max-width: 480px) {
+    .love-scp .container {
+        padding: 64px 32px;
+    }
+
+    .feature-container > .row {
+        grid-template-columns: 1fr;
+        grid-template-rows: 30vh 1fr;
+    }
+    
+    /* .feature-container > .row > .img{
+        min-height: 30vh;
+    } */
+    .feature-container > .row > .img-2 {
+    grid-row: 1;
+    }
+
+    .feature-container  .content {
+        padding: 8px 32px;
+    }
+
+    .feature-container .button {
+        margin: 32px 0;
+    }
+
+    .header-logo{
+        display: none;
+    }
+    ul.nav {
+        gap: 16px;
+    }
+    footer{
+        padding: 16px 16px;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .features-list {
+        grid-template-columns: 1fr;
+        gap:16px;
+        padding: 64px 25px;
+    }
+    .features-video-container {
+        padding: 32px 25px;
+    }
+    .features-card-container {
+        padding: 0;
+    }
+
+    .features-how-to-buy{
+        padding: 16px 32px;
+        grid-template-columns: 1fr;
+    }
+    .features-how-to-buy > img {
+        display: none;
+    }
+
+
+}
